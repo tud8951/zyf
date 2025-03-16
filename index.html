@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周韵霏的朋友圈</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* 发布按钮样式 */
+        .publish-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1aad19;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 朋友圈内容容器样式 */
+        .moments-container {
+            padding: 15px;
+        }
+
+        /* 单条朋友圈样式 */
+        .moment {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        /* 头像样式 */
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* 用户名样式 */
+        .username {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* 发布时间样式 */
+        .time {
+            color: #999;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        /* 朋友圈文字内容样式 */
+        .content {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* 图片样式 */
+        .moment-images {
+            margin-top: 10px;
+        }
+
+        .moment-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>周韵霏的朋友圈</h1>
+    </header>
+
+    <!-- 发布按钮 -->
+    <button class="publish-btn" onclick="window.location.href='https://bigjackson.top'" type="button">+</button> 
+
+    <!-- 朋友圈内容容器 -->
+    <div class="moments-container">
+        <!-- 单条朋友圈 -->
+        <div class="moment">
+            <img src="https://via.placeholder.com/40" alt="头像" class="avatar">
+            <span class="username">张三</span>
+            <span class="time">2025-03-16 10:00</span>
+            <div class="content">今天天气真好，出去散步了，心情超棒！</div>
+            <div class="moment-images">
+                <img src="https://via.placeholder.com/200x150" alt="图片1">
+            </div>
+        </div>
+
+        <!-- 单条朋友圈 -->
+        <div class="moment">
+            <img src="https://via.placeholder.com/40" alt="头像" class="avatar">
+            <span class="username">李四</span>
+            <span class="time">2025-03-15 18:30</span>
+            <div class="content">新做的蛋糕，味道还不错，分享给大家😋</div>
+            <div class="moment-images">
+                <img src="https://via.placeholder.com/200x150" alt="图片1">
+                <img src="https://via.placeholder.com/200x150" alt="图片2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
